@@ -83,6 +83,9 @@ body {
 
 .c-header {
   background: var(--brand-color);
+  display: flex;
+  padding: 10px;
+  align-items: center;
 }
 
 .c-logo {
@@ -96,20 +99,23 @@ body {
 
 .c-header__nav {
   
+  margin-left: auto;
   li {
     display: inline-block;
   }
 }
 
 .c-header__nav a, .c-user___options a {
-
+    align-items: center;
     padding: 8px;
     color: #fff;
-
+    display: flex;
+    
 }
 
 .c-user {
-  
+  border-left: 2px solid hsla(213, 78%, 33%, 0.39);
+  height: 25px;
   & img {
     width: 40px;
     height: 40px;
@@ -121,6 +127,14 @@ body {
 /* Conteúdo Principal */
 
 .wrapper {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 20px;
+  
+  
 }
 
 aside {
@@ -140,6 +154,7 @@ aside {
 
 main {
 
+  flex-grow: 1;
   & i{
     margin: .5em;
   }
@@ -189,7 +204,6 @@ aside,
 /* Articles */
 
 .articles-wrapper {
-  
 }
 
 .c-article {
@@ -228,6 +242,7 @@ aside,
 
 /* Latest Articles */
 .latest-section{
+  margin-top: 20px;
 }
 
 .search-bar {
